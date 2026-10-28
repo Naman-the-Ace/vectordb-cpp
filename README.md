@@ -41,7 +41,7 @@ It implements the core algorithms that power production databases like Pinecone,
 ```
 main.cpp (1100+ lines)
 ├── Distance Metrics        cosine, euclidean, manhattan
-├── BruteForce              O(N·d) linear scan
+├── BruteForce              O(N·d + N.logN) linear scan
 ├── KDTree                  O(log N) axis-aligned pruning
 ├── HNSW                    O(log N) multilayer graph, approximate
 ├── VectorDB                wraps all 3 — 16D demo vectors, benchmarking
